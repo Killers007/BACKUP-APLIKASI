@@ -1,0 +1,6 @@
+{
+    "require": {
+        "alhimik1986/php-excel-templator": "^1.0",
+        "dompdf/dompdf": "^0.8.4"
+    }
+}

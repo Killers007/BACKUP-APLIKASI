@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Administator | SIA ULM </title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- Bootstrap 3.3.2 -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!--Tabel-->
+        <link href="assets/plugins/datatables/dataTables.bootstrap.css" rel="stylesheet" type="text/css"/>
+        <!-- Font Awesome Icons -->
+        <link href="assets/font/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/font/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="assets/css/AdminLTE.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/skins/skin-blue.min.css" rel="stylesheet" type="text/css" />
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <!--
+  BODY TAG OPTIONS:
+  =================
+  Apply one or more of the following classes to get the 
+  desired effect
+  |---------------------------------------------------------|
+  | SKINS         | skin-blue                               |
+  |               | skin-black                              |
+  |               | skin-purple                             |
+  |               | skin-yellow                             |
+  |               | skin-red                                |
+  |               | skin-green                              |
+  |---------------------------------------------------------|
+  |LAYOUT OPTIONS | fixed                                   |
+  |               | layout-boxed                            |
+  |               | layout-top-nav                          |
+  |               | sidebar-collapse                        |  
+  |---------------------------------------------------------|
+  
+  -->
+    <body class="skin-blue fixed">
+        <div class="wrapper">
+            <!-- HEADER -->
+            <header class="main-header">
+                <!-- Logo -->
+                <a href="#" class="logo">SIA ULM</a>
+                <!-- Header Navbar -->
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <!-- Sidebar toggle button-->
+                    <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button"><span class="sr-only">Toggle navigation</span></a>
+                    <!-- Navbar Right Menu -->
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            <!-- User Account Menu -->
+                            <li class="dropdown user user-menu">
+                                <!-- Menu Toggle Button -->
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <!-- The user image in the navbar-->
+                                    <img src="assets/img/user2-160x160.jpg" class="user-image" alt="User Image" />
+                                    <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                                    <span class="hidden-xs">Dheny Sudiarto</span>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <!-- The user image in the menu -->
+                                    <li class="user-header">
+                                        <img src="assets/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                                        <p>Dheny Sudiarto<small>Administrator Aplikasi</small></p>
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="#" class="btn btn-default btn-flat">Kunci</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="#" class="btn btn-default btn-flat">Keluar</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            
+            <!-- SIDEBAR -->
+            <aside class="main-sidebar">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel (optional) -->
+                    <div class="user-panel">
+                        <div class="pull-left image">
+                            <img src="assets/img/user2-160x160.jpg" class="img-circle" alt="User Image" />
+                        </div>
+                        <div class="pull-left info">
+                            <p>Administrator</p>
+                            <!-- Status -->
+                            <a href="#"><i class="fa fa-circle text-success"></i> SIA ULM</a>
+                        </div>
+                    </div>
+                    <!-- /.search form -->
+                    <!-- Sidebar Menu -->
+                    <ul class="sidebar-menu">
+                        <li class="header">Menu</li>
+                        <!-- Optionally, you can add icons to the links -->
+                        <li class="active"> 
+                            <a href="#"><span>Menu 1</span></a>
+                            <li>
+                                <a href="#"><span>Menu 2</span></a>
+                            </li>
+
+                            <li class="treeview">
+                                <a href="#"><span>Menu Dropdown</span> <i class="fa fa-angle-left pull-right"></i></a>
+                                <ul class="treeview-menu">
+                                    <li>
+                                        <a href="#">Menu Dropdown 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Menu Dropdown 2</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Menu Dropdown 3</a>
+                                    </li>
+                                </ul>
+                            </li>
+                    </ul>
+                    <!-- /.sidebar-menu -->
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- KONTEN -->
+            <div class="content-wrapper">
+                <!-- Content Header (Page header) -->
+                <section class="content-header">
+                    <h1>Database<small> Menu 1</small></h1>
+                     <!---<ol class="breadcrumb">
+                        <li>
+                           <a href="#"><i class="fa fa-dashboard"></i></a> 
+                        </li>
+                        <li class="active"></li>
+                    </ol>-->
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    <!-- Your Page Content Here -->
+                    <!--Section untuk mengisikan konten -->
+
+                    <!--table-->
+                    <div class="box">
+                    <div class="box-header">
+                       <!--  <h3 class="box-title">Database Sampel</h3> -->
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                        <table id="example1" class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>ID Member</th>
+                                    <th>Nama</th>
+                                    <th>No Telepon</th>
+                                    <th>Email</th>
+                                    <th>Alamat</th>
+                                    <th>Tanggal Lahir</th>
+                                    <th>Jenis Kelamin</th>
+                                    <th>Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                            <tr>   
+                                <td>001</td>
+                                <td>Dheny Sudiarto</td>
+                                <td>085751760975</td>
+                                <td>dheny@gmail.com</td>
+                                <td>Jl. Kartini no. 21 Komplek Kelapa Gading Permai</td>
+                                <td>08 Juni 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+                              <tr>   
+                                <td>002</td>
+                                <td>Riyan Hadinata</td>
+                                <td>085751765634</td>
+                                <td>riyan@gmail.com</td>
+                                <td>Jl. Aquarius no. 56 Komplek Kelapa Gading Permai</td>
+                                <td>23 Oktober 1994</td>
+                                <td>L</td>
+                                <td>Hapas Edit</td>
+                            </tr>
+
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th><small>ID Member</small></th>
+                                    <th><small>Nama</small></th>
+                                    <th><small>No Telepon</small></th>
+                                    <th><small>Email</small></th>
+                                    <th><small>Alamat</small></th>
+                                    <th><small>Tanggal Lahir</small></th>
+                                    <th><small>Jenis Kelamin</small></th>
+                                    <th><small>Aksi</small></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <!-- end of table-->
+                </section>
+                <!-- /.content -->
+            </div>
+            <!-- /.content-wrapper -->
+            
+            <!-- FOOTER -->
+            <footer class="main-footer">
+                <!-- To the right -->
+                <div class="pull-right hidden-xs">
+                    Copyright &copy; 2015<a href="#">SIA ULM</a>
+                </div>
+                <!-- Default to the left -->                 
+                <strong>Dheny Sudiarto</strong> 
+            </footer>
+        </div> <!-- DIV WRAPPER-->
+        
+        <!-- JS SCRIPTS -->
+        <!-- jQuery 2.1.3 -->
+        <script src="assets/plugins/jQuery/jQuery-2.1.3.min.js"></script>
+        <!-- Bootstrap 3.3.2 JS -->
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="assets/js/app.min.js" type="text/javascript"></script>
+        <!-- DATA TABES SCRIPT -->
+        <script src="assets/plugins/datatables/jquery.dataTables.js" type="text/javascript"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap.js" type="text/javascript"></script>
+         <script type="text/javascript">
+          $(function () {
+            $("#example1").dataTable();
+            $('#example2').dataTable({
+              "bPaginate": true,
+              "bLengthChange": false,
+              "bFilter": false,
+              "bSort": true,
+              "bInfo": true,
+              "bAutoWidth": false
+            });
+          });
+        </script>
+    </body>
+</html>
